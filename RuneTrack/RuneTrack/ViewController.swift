@@ -12,6 +12,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var statTableView: UITableView!
     
+    var LunaYuhi = Stats(Overall: ["Experience" : 2000,
+                                   "Rank": 1,
+                                   "Level": 20],
+                         Attack: ["Experience" : 2000,
+                                  "Rank": 1,
+                                  "Level": 20])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,7 +36,12 @@ extension ViewController: UITableViewDataSource {
 
    /// Creates and configures each cell.
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       return UITableViewCell()
+       let cell = tableView.dequeueReusableCell(withIdentifier: "statCell", for: indexPath) as! PostTableViewCell
+       
+       let post = LunaYuhi
+       cell.post = post
+       
+          return cell
   }
 }
 extension ViewController: UITableViewDelegate {
