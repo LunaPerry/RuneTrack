@@ -8,10 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var statTableView: Feed!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        statTableView.dataSource = self
+        statTableView.delegate = self
     }
 
 }
