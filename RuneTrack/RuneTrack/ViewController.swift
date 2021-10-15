@@ -21,6 +21,19 @@ class ViewController: UIViewController {
         statTableView.delegate = self
     }
     
+    func updateTable() {
+        fetchPerson(from: "Luna_Yuhi") { result in
+            switch result {
+                
+            case let .success(person):
+                self.person = person
+                
+            case let .failure(error):
+                print(error)
+            }
+        }
+    }
+    
     func fetchPerson(from userInput: String, completion: @escaping (Result<Person, Error>) -> Void) {
         // make reqeust to API
 
