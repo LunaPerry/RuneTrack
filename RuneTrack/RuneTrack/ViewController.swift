@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var statTableView: Feed!
+    
+    
+    @IBOutlet weak var statTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
