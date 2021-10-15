@@ -6,18 +6,19 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
     
     @IBOutlet weak var statTableView: UITableView!
-    
     var LunaYuhi = Stats(Overall: ["Experience" : 2000,
                                    "Rank": 1,
                                    "Level": 20],
                          Attack: ["Experience" : 2000,
                                   "Rank": 1,
                                   "Level": 20])
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
