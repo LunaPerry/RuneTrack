@@ -58,7 +58,7 @@ struct Stats {
 //    let
 //}
 
-class PersonVC: UIViewController {
+//class PersonVC: UIViewController {
 //    var person: Person?
 
 
