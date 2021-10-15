@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tqy-iy-Yis" customClass="Feed">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tqy-iy-Yis">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="statCell" id="qrX-4E-Czb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="statCell" id="qrX-4E-Czb" customClass="PostTableViewCell" customModule="RuneTrack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="35"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qrX-4E-Czb" id="9WQ-Nc-hAw">
@@ -91,6 +91,13 @@
                                                 <constraint firstItem="vK8-VN-uz7" firstAttribute="leading" secondItem="9WQ-Nc-hAw" secondAttribute="leading" id="yUY-CV-Zaw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="skillName" destination="y8f-rF-SfB" id="7Fd-Xz-cXS"/>
+                                            <outlet property="statIcon" destination="zcF-vX-ysO" id="3Kc-He-CyA"/>
+                                            <outlet property="statLevel" destination="Q8v-ne-hPU" id="RF4-GD-nMA"/>
+                                            <outlet property="statRank" destination="zrX-7Y-REx" id="Gws-XA-xob"/>
+                                            <outlet property="statXp" destination="gVH-9W-nX0" id="1tY-bT-dwO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

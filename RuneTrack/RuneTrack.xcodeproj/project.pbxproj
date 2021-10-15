@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		913FABD82719CC0300671552 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FABD72719CC0300671552 /* Post.swift */; };
+		913FABDA2719D9F700671552 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FABD92719D9F700671552 /* PostTableViewCell.swift */; };
 		916CA7B72714ABBD0084D2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CA7B62714ABBD0084D2BE /* AppDelegate.swift */; };
 		916CA7B92714ABBD0084D2BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CA7B82714ABBD0084D2BE /* SceneDelegate.swift */; };
 		916CA7BB2714ABBD0084D2BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CA7BA2714ABBD0084D2BE /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		913FABD72719CC0300671552 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		913FABD92719D9F700671552 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		916CA7B32714ABBD0084D2BE /* RuneTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuneTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916CA7B62714ABBD0084D2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		916CA7B82714ABBD0084D2BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				916CA7B82714ABBD0084D2BE /* SceneDelegate.swift */,
 				916CA7BA2714ABBD0084D2BE /* ViewController.swift */,
 				916CA7BC2714ABBD0084D2BE /* Main.storyboard */,
+				913FABD92719D9F700671552 /* PostTableViewCell.swift */,
 				916CA7BF2714ABC00084D2BE /* Assets.xcassets */,
 				916CA7C12714ABC00084D2BE /* LaunchScreen.storyboard */,
 				913FABD72719CC0300671552 /* Post.swift */,
@@ -143,6 +146,7 @@
 			files = (
 				916CA7BB2714ABBD0084D2BE /* ViewController.swift in Sources */,
 				916CA7B72714ABBD0084D2BE /* AppDelegate.swift in Sources */,
+				913FABDA2719D9F700671552 /* PostTableViewCell.swift in Sources */,
 				916CA7B92714ABBD0084D2BE /* SceneDelegate.swift in Sources */,
 				913FABD82719CC0300671552 /* Post.swift in Sources */,
 			);
