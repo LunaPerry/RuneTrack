@@ -38,6 +38,6 @@ class PostTableViewCell: UITableViewCell {
        // make sure we return if post doesn't exist
        guard let post = post else { return }
        // assign the placeholder image to the UI element
-       statIcon.image = UIImage(named: "Attack")
+        statIcon.image = UIImage(named: post.title)
     }
 }

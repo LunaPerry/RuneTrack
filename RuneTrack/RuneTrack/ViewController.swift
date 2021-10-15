@@ -12,7 +12,11 @@ class ViewController: UIViewController {
     var person: Person?
     
     @IBOutlet weak var statTableView: UITableView!
+    @IBOutlet weak var usernameTextField: UITextField!
     
+    @IBAction func buttonTapped(_ sender: Any) {
+        updateTable()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +26,12 @@ class ViewController: UIViewController {
     }
     
     func updateTable() {
-        fetchPerson(from: "Luna_Yuhi") { result in
+        fetchPerson(from: usernameTextField.text!) { result in
             switch result {
                 
             case let .success(person):
                 self.person = person
+                self.statTableView.reloadData()
                 
             case let .failure(error):
                 print(error)
