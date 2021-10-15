@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         updateTable()
+        print(person)
     }
     
     override func viewDidLoad() {
@@ -54,15 +55,19 @@ class ViewController: UIViewController {
 
     func makeStats(from string: String) -> [Stats] {
         let skillNames = ["Overall", "Attack", "Defence", "Strength", "Constitution", "Ranged", "Prayer", "Magic", "Cooking", "Woodcutting", "Fletching", "Fishing", "Firemaking", "Crafting", "Smithing", "Mining", "Herblore", "Agility", "Thieving", "Slayer", "Farming", "Runecrafting", "Hunter", "Construction", "Summoning", "Dungeoneering", "Divination", "Invention", "Archaeology"]
-        let jsonArray = string.split(separator: ",")
+        var skillStringArray = string.split(separator: " ")
 
         
         var results = [Stats]()
 
         for skillName in skillNames {
-            guard jsonArray.count >= 3 else { break }
-
-            let values = Array(jsonArray.dropFirst(3))
+////            guard jsonArray.count >= 3 else { break }
+//            let holder = String(skillStringArray.removeFirst())
+//            let values = Array(holder.split(separator: ","))
+            guard skillStringArray.isEmpty == false else { break }
+            let values = skillStringArray.removeFirst().split(separator: ",")
+            guard values.count >= 3 else { break }
+            
             
             let stat = Stats(title: skillName, rank: String(values[0]), level: String(values[1]), experience: String(values[2]))
             results.append(stat)
