@@ -10,7 +10,7 @@ import Foundation
 
 class PostTableViewCell: UITableViewCell {
 
-        @IBOutlet weak var statIcon: UIImageView!
+    @IBOutlet weak var statIcon: UIImageView!
     @IBOutlet weak var skillName: UILabel!
     @IBOutlet weak var statLevel: UILabel!
     @IBOutlet weak var statXp: UILabel!
@@ -18,14 +18,8 @@ class PostTableViewCell: UITableViewCell {
     
     var post: Stats? {
         didSet {
-//            guard let post = post else { return }
-//            let i:Int = 1
-//            skillName.text = post.skillNames[i]
-//            statLevel.text = String(post.Attack["Level"]!)
-//            statXp.text = String(post.Attack["Experience"]!)
-//            statRank.text = String(post.Attack["Rank"]!)
-//            updateStatIcon()
-
+            
+            // Set cell data
             guard let post = post else { return }
             skillName.text = post.title
             statLevel.text = String(post.level)

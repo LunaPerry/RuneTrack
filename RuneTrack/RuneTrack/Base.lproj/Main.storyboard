@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPM-vK-1A3">
-                                                <rect key="frame" x="0.0" y="0.0" width="347" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="BZg-KE-7em"/>
                                                 </constraints>
@@ -31,9 +31,9 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8E-Xt-ady">
-                                                <rect key="frame" x="347" y="0.0" width="67" height="34"/>
+                                                <rect key="frame" x="345" y="0.0" width="69" height="34"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpM-7C-Rd8"/>
                                                 </connections>
